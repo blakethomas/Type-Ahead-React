@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Typeahead } from 'react-bootstrap-typeahead'
-import styled from 'styled-components'
+
 
 async function pokemon() {
   const response = await fetch('http://localhost:3000/pokemon')

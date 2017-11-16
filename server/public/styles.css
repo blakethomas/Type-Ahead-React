@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://c1.staticflickr.com/4/3489/3748539574_7d1d2696c8_b.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 10px;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.rbt {
+  position: absolute;
+  width: 33%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  width: 33%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: black;
+  -webkit-text-stroke: 1px black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+}
+
+body::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-height: 600px) {
+  .title {
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    font-size: 2em;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media (max-height: 251px) {
+  .title {
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    font-size: 1em;
+    transform: translate(-50%, -10%);
+  }
+}

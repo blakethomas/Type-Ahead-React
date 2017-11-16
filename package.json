@@ -1,0 +1,39 @@
+{
+  "name": "type-ahead-react",
+  "version": "1.0.0",
+  "description": "A web app that displays suggestions while a user is entering text to a input field.",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify client/index.js -t babelify -o server/public/bundle.js",
+    "bundle:watch": "watchify client/index.js -vd -t babelify -o server/public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakethomas/Type-Ahead-React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakethomas/Type-Ahead-React/issues"
+  },
+  "homepage": "https://github.com/blakethomas/Type-Ahead-React#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "path": "^0.12.7",
+    "react": "^16.1.1",
+    "react-bootstrap-typeahead": "^2.0.0-rc.4",
+    "react-dom": "^16.1.1",
+    "styled-components": "^2.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-jsx": "^2.0.0",
+    "watchify": "^3.9.0"
+  }
+}
